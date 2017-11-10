@@ -1,0 +1,260 @@
+body {
+    overflow: visible;
+    margin: 0;
+    text-align: center;
+    font-family: Nunito, Arial, sans-serif;
+    line-height: 1.15em;
+    color: darkslategray
+}
+
+h1 {
+    font-family: Nunito, sans-serif;
+    font-weight: 800;
+    font-size: 24px
+}
+
+#jum {
+    margin: 0;
+    padding: 5px;
+    width: 100%;
+}
+
+#chart {
+    position: relative;
+    padding: 10px;
+    visibility: visible;
+    display: block;
+    margin-left: -1.25em;
+    margin-top: -3em;
+    border-left: 1em solid #363636;
+}
+
+#chart:before {
+    position: relative;
+    content: "CHART";
+    margin-top: 3em;
+    left: -3em;
+    top: 1.2em;
+    width: 0.3em;
+    font-size: 0.85em;
+    font-weight: 800;
+    font-family: Nunito, Arial, sans-serif;
+    background-position: left top;
+    background-size: inherit /*0.3em 8em*/;
+    background-origin: border-box; 
+    background-attachment: scroll;
+    letter-spacing: -0.5px;
+    color: #ffffff;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+#clickerWrapper {
+    top: 0;
+    z-index: 1;
+    display: block;
+    position: relative;
+    width: 640px;
+    padding-top: 5px;
+    visibility: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#clicker,
+#clicker_right {
+    z-index: 1;
+    display: inline;
+    font-family: Nunito;
+    font-weight: 800;
+    color: #363636;
+    position: relative;
+    /*width: 80px;*/
+    text-align: center;
+    width: 20%;
+    margin: auto;
+    cursor: pointer;
+}
+
+#progress {
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+    width: 40%;
+    height: 6px;
+    margin: 10px auto;
+    visibility: visible;
+}
+
+#buttonWrapper {
+    z-index: 2;
+    display: block;
+    font-family: Nunito;
+    font-size: 14px;
+    font-weight: 300;
+    color: #6B6B6B;
+    position: relative;
+    width: 640px;
+    text-align: center;
+    overflow: visible;
+    margin: 0 auto;
+}
+
+sideButton {
+    position: relative;
+    width: 300px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+#next {
+    width: 90px;
+    cursor: pointer;
+    float: left;
+    text-align: left;
+}
+
+#reset {
+    width: 110px;
+    cursor: pointer;
+    float: left;
+}
+
+#link {
+    width: 100px;
+    cursor: pointer;
+    float: left;
+    text-align: right;
+}
+
+line {
+    stroke: #000;
+    stroke-width: 1px;
+}
+
+text {
+    font-size: 8px;
+}
+
+.titles {
+    font-size: 12px;
+}
+
+.explanation {
+    font-family: Vollkorn, Georgia, serif;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: justify;
+}
+
+.tooltip .title {
+    text-anchor: middle;
+    fill: #3B3B3B;
+    font-family: Nunito, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.titleLine {
+    stroke: #DCDCDC;
+    shape-rendering: crispEdges;
+}
+
+.title-h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    color: #3B3B3B;
+}
+
+@media (min-width: 500px) {
+    .explanation {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
+
+path.chord {
+    fill-opacity: .80;
+}
+
+.mdi::before {
+    font-size: 24px;
+    line-height: 14px;
+}
+
+.btn .mdi::before {
+    position: relative;
+    top: 4px;
+}
+
+.btn-xs .mdi::before {
+    font-size: 18px;
+    top: 3px;
+}
+
+.btn-sm .mdi::before {
+    font-size: 18px;
+    top: 3px;
+}
+
+.dropdown-menu .mdi {
+    width: 18px;
+}
+
+.dropdown-menu .mdi::before {
+    position: relative;
+    top: 4px;
+    left: -8px;
+}
+
+.nav .mdi::before {
+    position: relative;
+    top: 4px;
+}
+
+.navbar .navbar-toggle .mdi::before {
+    position: relative;
+    top: 4px;
+    color: #FFF;
+}
+
+.breadcrumb .mdi::before {
+    position: relative;
+    top: 4px;
+}
+
+.breadcrumb a:hover {
+    text-decoration: none;
+}
+
+.breadcrumb a:hover span {
+    text-decoration: underline;
+}
+
+.alert .mdi::before {
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+}
+
+.input-group-addon .mdi::before {
+    position: relative;
+    top: 3px;
+}
+
+.navbar-brand .mdi::before {
+    position: relative;
+    top: 2px;
+    margin-right: 2px;
+}
+
+.list-group-item .mdi::before {
+    position: relative;
+    top: 3px;
+    left: -3px
+}
